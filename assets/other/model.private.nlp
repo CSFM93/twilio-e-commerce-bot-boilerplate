@@ -1,0 +1,1123 @@
+{
+  "settings": {
+    "tag": "nlp",
+    "modelFileName": "model.private.nlp",
+    "languages": [
+      "en"
+    ],
+    "calculateSentiment": true,
+    "executeActionsBeforeAnswers": false
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "hello": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "howdy": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "grettings": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "good,morning": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "afternoon,good": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "good,night": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "evening,good": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "goodbye": {
+            "intent": "farewell",
+            "domain": "default"
+          },
+          "for,goodbye,now": {
+            "intent": "farewell",
+            "domain": "default"
+          },
+          "bye,care,take": {
+            "intent": "farewell",
+            "domain": "default"
+          },
+          "later,okay,see,you": {
+            "intent": "farewell",
+            "domain": "default"
+          },
+          "bye,for,now": {
+            "intent": "farewell",
+            "domain": "default"
+          },
+          "go,i,must": {
+            "intent": "farewell",
+            "domain": "default"
+          },
+          "sure": {
+            "intent": "agreeing",
+            "domain": "default"
+          },
+          "yes": {
+            "intent": "agreeing",
+            "domain": "default"
+          },
+          "okay": {
+            "intent": "agreeing",
+            "domain": "default"
+          },
+          "maybe": {
+            "intent": "agreeing",
+            "domain": "default"
+          },
+          "no": {
+            "intent": "refusing",
+            "domain": "default"
+          },
+          "nah": {
+            "intent": "refusing",
+            "domain": "default"
+          },
+          "nope": {
+            "intent": "refusing",
+            "domain": "default"
+          },
+          "products,show": {
+            "intent": "showProducts",
+            "domain": "default"
+          },
+          "product,show": {
+            "intent": "showProducts",
+            "domain": "default"
+          },
+          "buy,i,to,want": {
+            "intent": "addToCart",
+            "domain": "default"
+          },
+          "buy,i,like,to,would": {
+            "intent": "addToCart",
+            "domain": "default"
+          },
+          "i,want": {
+            "intent": "addToCart",
+            "domain": "default"
+          },
+          "add,the": {
+            "intent": "addToCart",
+            "domain": "default"
+          },
+          "checkout": {
+            "intent": "checkout",
+            "domain": "default"
+          },
+          "check,out": {
+            "intent": "checkout",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greeting": "default",
+          "farewell": "default",
+          "agreeing": "default",
+          "refusing": "default",
+          "showProducts": "default",
+          "addToCart": "default",
+          "checkout": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "grettings",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good afternoon",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good night",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "farewell"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye for now",
+            "intent": "farewell"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye bye take care",
+            "intent": "farewell"
+          },
+          {
+            "domain": "default",
+            "utterance": "okay see you later",
+            "intent": "farewell"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye for now",
+            "intent": "farewell"
+          },
+          {
+            "domain": "default",
+            "utterance": "i must go",
+            "intent": "farewell"
+          },
+          {
+            "domain": "default",
+            "utterance": "sure",
+            "intent": "agreeing"
+          },
+          {
+            "domain": "default",
+            "utterance": "yes",
+            "intent": "agreeing"
+          },
+          {
+            "domain": "default",
+            "utterance": "okay",
+            "intent": "agreeing"
+          },
+          {
+            "domain": "default",
+            "utterance": "maybe",
+            "intent": "agreeing"
+          },
+          {
+            "domain": "default",
+            "utterance": "no",
+            "intent": "refusing"
+          },
+          {
+            "domain": "default",
+            "utterance": "nah",
+            "intent": "refusing"
+          },
+          {
+            "domain": "default",
+            "utterance": "nope",
+            "intent": "refusing"
+          },
+          {
+            "domain": "default",
+            "utterance": "show products",
+            "intent": "showProducts"
+          },
+          {
+            "domain": "default",
+            "utterance": "show product",
+            "intent": "showProducts"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want to buy",
+            "intent": "addToCart"
+          },
+          {
+            "domain": "default",
+            "utterance": "I would like to buy",
+            "intent": "addToCart"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want",
+            "intent": "addToCart"
+          },
+          {
+            "domain": "default",
+            "utterance": "Add the",
+            "intent": "addToCart"
+          },
+          {
+            "domain": "default",
+            "utterance": "checkout",
+            "intent": "checkout"
+          },
+          {
+            "domain": "default",
+            "utterance": "check out",
+            "intent": "checkout"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "hello": 1,
+              "hi": 1,
+              "howdy": 1,
+              "hey": 1,
+              "grettings": 1,
+              "good": 1,
+              "morning": 1,
+              "afternoon": 1,
+              "night": 1,
+              "evening": 1,
+              "goodbye": 1,
+              "for": 1,
+              "now": 1,
+              "bye": 1,
+              "take": 1,
+              "care": 1,
+              "okay": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "i": 1,
+              "must": 1,
+              "go": 1,
+              "sure": 1,
+              "yes": 1,
+              "maybe": 1,
+              "no": 1,
+              "nah": 1,
+              "nope": 1,
+              "show": 1,
+              "products": 1,
+              "product": 1,
+              "want": 1,
+              "to": 1,
+              "buy": 1,
+              "would": 1,
+              "like": 1,
+              "add": 1,
+              "the": 1,
+              "checkout": 1,
+              "check": 1,
+              "out": 1
+            },
+            "intents": {
+              "greeting": 1,
+              "farewell": 1,
+              "agreeing": 1,
+              "refusing": 1,
+              "showProducts": 1,
+              "addToCart": 1,
+              "checkout": 1
+            },
+            "intentFeatures": {
+              "greeting": {
+                "hello": 1,
+                "hi": 1,
+                "howdy": 1,
+                "hey": 1,
+                "grettings": 1,
+                "good": 1,
+                "morning": 1,
+                "afternoon": 1,
+                "night": 1,
+                "evening": 1
+              },
+              "farewell": {
+                "goodbye": 1,
+                "for": 1,
+                "now": 1,
+                "bye": 1,
+                "take": 1,
+                "care": 1,
+                "okay": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "i": 1,
+                "must": 1,
+                "go": 1
+              },
+              "agreeing": {
+                "sure": 1,
+                "yes": 1,
+                "okay": 1,
+                "maybe": 1
+              },
+              "refusing": {
+                "no": 1,
+                "nah": 1,
+                "nope": 1
+              },
+              "showProducts": {
+                "show": 1,
+                "products": 1,
+                "product": 1
+              },
+              "addToCart": {
+                "i": 1,
+                "want": 1,
+                "to": 1,
+                "buy": 1,
+                "would": 1,
+                "like": 1,
+                "add": 1,
+                "the": 1
+              },
+              "checkout": {
+                "checkout": 1,
+                "check": 1,
+                "out": 1
+              }
+            },
+            "featuresToIntent": {
+              "hello": [
+                "greeting"
+              ],
+              "hi": [
+                "greeting"
+              ],
+              "howdy": [
+                "greeting"
+              ],
+              "hey": [
+                "greeting"
+              ],
+              "grettings": [
+                "greeting"
+              ],
+              "good": [
+                "greeting"
+              ],
+              "morning": [
+                "greeting"
+              ],
+              "afternoon": [
+                "greeting"
+              ],
+              "night": [
+                "greeting"
+              ],
+              "evening": [
+                "greeting"
+              ],
+              "goodbye": [
+                "farewell"
+              ],
+              "for": [
+                "farewell"
+              ],
+              "now": [
+                "farewell"
+              ],
+              "bye": [
+                "farewell"
+              ],
+              "take": [
+                "farewell"
+              ],
+              "care": [
+                "farewell"
+              ],
+              "okay": [
+                "farewell",
+                "agreeing"
+              ],
+              "see": [
+                "farewell"
+              ],
+              "you": [
+                "farewell"
+              ],
+              "later": [
+                "farewell"
+              ],
+              "i": [
+                "farewell",
+                "addToCart"
+              ],
+              "must": [
+                "farewell"
+              ],
+              "go": [
+                "farewell"
+              ],
+              "sure": [
+                "agreeing"
+              ],
+              "yes": [
+                "agreeing"
+              ],
+              "maybe": [
+                "agreeing"
+              ],
+              "no": [
+                "refusing"
+              ],
+              "nah": [
+                "refusing"
+              ],
+              "nope": [
+                "refusing"
+              ],
+              "show": [
+                "showProducts"
+              ],
+              "products": [
+                "showProducts"
+              ],
+              "product": [
+                "showProducts"
+              ],
+              "want": [
+                "addToCart"
+              ],
+              "to": [
+                "addToCart"
+              ],
+              "buy": [
+                "addToCart"
+              ],
+              "would": [
+                "addToCart"
+              ],
+              "like": [
+                "addToCart"
+              ],
+              "add": [
+                "addToCart"
+              ],
+              "the": [
+                "addToCart"
+              ],
+              "checkout": [
+                "checkout"
+              ],
+              "check": [
+                "checkout"
+              ],
+              "out": [
+                "checkout"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "hello",
+                "hi",
+                "howdy",
+                "hey",
+                "grettings",
+                "good",
+                "morning",
+                "afternoon",
+                "night",
+                "evening",
+                "goodbye",
+                "for",
+                "now",
+                "bye",
+                "take",
+                "care",
+                "okay",
+                "see",
+                "you",
+                "later",
+                "i",
+                "must",
+                "go",
+                "sure",
+                "yes",
+                "maybe",
+                "no",
+                "nah",
+                "nope",
+                "show",
+                "products",
+                "product",
+                "want",
+                "to",
+                "buy",
+                "would",
+                "like",
+                "add",
+                "the",
+                "checkout",
+                "check",
+                "out"
+              ],
+              "intents": [
+                "greeting",
+                "farewell",
+                "agreeing",
+                "refusing",
+                "showProducts",
+                "addToCart",
+                "checkout"
+              ],
+              "perceptrons": [
+                [
+                  10.057727813720703,
+                  10.057488441467285,
+                  10.056971549987793,
+                  10.056353569030762,
+                  10.05562686920166,
+                  8.046217918395996,
+                  2.011655807495117,
+                  2.0116019248962402,
+                  2.011533498764038,
+                  2.011420726776123,
+                  -4.23422384262085,
+                  -1.3876621723175049,
+                  -1.3876621723175049,
+                  -1.9392188787460327,
+                  -1.2959058284759521,
+                  -1.2959058284759521,
+                  -4.227970600128174,
+                  -0.8908135294914246,
+                  -0.8908135294914246,
+                  -0.8908135294914246,
+                  -2.8168046474456787,
+                  -1.099067211151123,
+                  -1.099067211151123,
+                  -4.228397369384766,
+                  -4.227957725524902,
+                  -4.227574825286865,
+                  -4.227280616760254,
+                  -4.226933479309082,
+                  -4.226529598236084,
+                  -2.818577289581299,
+                  -1.40940260887146,
+                  -1.4091730117797852,
+                  -1.4109411239624023,
+                  -0.5739835500717163,
+                  -0.5739835500717163,
+                  -0.23417630791664124,
+                  -0.23417630791664124,
+                  -2.11387038230896,
+                  -2.11387038230896,
+                  -4.225858688354492,
+                  -2.113795042037964,
+                  -2.113795042037964,
+                  4.227702534971156
+                ],
+                [
+                  -1.3733524084091187,
+                  -1.37173330783844,
+                  -1.3700941801071167,
+                  -1.3684343099594116,
+                  -1.366753101348877,
+                  -1.1149927377700806,
+                  -0.2810394763946533,
+                  -0.2785808742046356,
+                  -0.27751845121383667,
+                  -0.2764546275138855,
+                  11.930697441101074,
+                  0.8445096611976624,
+                  0.8445096611976624,
+                  10.609858512878418,
+                  1.2527883052825928,
+                  1.2527883052825928,
+                  -1.3734321594238281,
+                  4.752801418304443,
+                  4.752801418304443,
+                  4.752801418304443,
+                  1.780880093574524,
+                  5.544085502624512,
+                  5.544085502624512,
+                  -1.3914031982421875,
+                  -1.390031337738037,
+                  -1.3856266736984253,
+                  -1.3841567039489746,
+                  -1.3826731443405151,
+                  -1.3811748027801514,
+                  -1.0347260236740112,
+                  -0.49549630284309387,
+                  -0.4714837670326233,
+                  -3.1799941062927246,
+                  -1.1330839395523071,
+                  -1.1330839395523071,
+                  -0.5750036835670471,
+                  -0.5750036835670471,
+                  -0.6984423398971558,
+                  -0.6984423398971558,
+                  -1.3782848119735718,
+                  -0.6974361538887024,
+                  -0.6974361538887024,
+                  1.4070144622463798
+                ],
+                [
+                  -2.918009042739868,
+                  -2.917617082595825,
+                  -2.9171767234802246,
+                  -2.916685104370117,
+                  -2.916139602661133,
+                  -2.335211753845215,
+                  -0.5839347243309021,
+                  -0.5838487148284912,
+                  -0.5837535262107849,
+                  -0.583631157875061,
+                  -2.9154651165008545,
+                  -0.8094121813774109,
+                  -0.8094121813774109,
+                  -1.2992979288101196,
+                  -0.8097763657569885,
+                  -0.8097763657569885,
+                  11.33010196685791,
+                  -4.745931148529053,
+                  -4.745931148529053,
+                  -4.745931148529053,
+                  -1.908675193786621,
+                  -0.5046898126602173,
+                  -0.5046898126602173,
+                  11.369595527648926,
+                  11.369507789611816,
+                  11.364485740661621,
+                  -2.919265031814575,
+                  -2.9190828800201416,
+                  -2.9188687801361084,
+                  -1.9544782638549805,
+                  -0.9880414009094238,
+                  -0.9650986790657043,
+                  -1.1397031545639038,
+                  -0.5660237073898315,
+                  -0.5660237073898315,
+                  -0.24255524575710297,
+                  -0.24255524575710297,
+                  -1.459783673286438,
+                  -1.459783673286438,
+                  -2.9185163974761963,
+                  -1.4597383737564087,
+                  -1.4597383737564087,
+                  2.919661773089291
+                ],
+                [
+                  -2.174778938293457,
+                  -2.174083709716797,
+                  -2.1737799644470215,
+                  -2.1736323833465576,
+                  -2.1734607219696045,
+                  -1.7516756057739258,
+                  -0.45772498846054077,
+                  -0.4395902752876282,
+                  -0.4283633828163147,
+                  -0.4238321781158447,
+                  -2.173295259475708,
+                  -0.6106160283088684,
+                  -0.6106160283088684,
+                  -0.952796995639801,
+                  -0.6106235980987549,
+                  -0.6106235980987549,
+                  -2.1724436283111572,
+                  -0.3517338037490845,
+                  -0.3517338037490845,
+                  -0.3517338037490845,
+                  -1.491403341293335,
+                  -0.3413110673427582,
+                  -0.3413110673427582,
+                  -2.1729676723480225,
+                  -2.1726770401000977,
+                  -2.172013998031616,
+                  12.111067771911621,
+                  12.110566139221191,
+                  12.109753608703613,
+                  -1.5864607095718384,
+                  -0.809285581111908,
+                  -0.766529381275177,
+                  -0.9156994819641113,
+                  -0.4957404136657715,
+                  -0.4957404136657715,
+                  -0.21185164153575897,
+                  -0.21185164153575897,
+                  -1.1500169038772583,
+                  -1.1500169038772583,
+                  -2.176638126373291,
+                  -1.1316264867782593,
+                  -1.1316264867782593,
+                  2.173723873333247
+                ],
+                [
+                  -0.48226305842399597,
+                  -0.4710404574871063,
+                  -0.46297386288642883,
+                  -0.4548686742782593,
+                  -0.44575756788253784,
+                  -0.5959177017211914,
+                  -0.15257959067821503,
+                  -0.14712730050086975,
+                  -0.1315842866897583,
+                  -0.11712241917848587,
+                  -0.4644847810268402,
+                  -0.2187853306531906,
+                  -0.2187853306531906,
+                  -0.2885822057723999,
+                  -0.1845542937517166,
+                  -0.1845542937517166,
+                  -0.4416862726211548,
+                  -0.14491045475006104,
+                  -0.14491045475006104,
+                  -0.14491045475006104,
+                  -0.5652521252632141,
+                  -0.06869877129793167,
+                  -0.06869877129793167,
+                  -0.42188936471939087,
+                  -0.4172285497188568,
+                  -0.41175687313079834,
+                  -0.4096752405166626,
+                  -0.4088136553764343,
+                  -0.40873533487319946,
+                  9.25131607055664,
+                  4.625638008117676,
+                  4.625677108764648,
+                  -0.34073278307914734,
+                  -0.2580598294734955,
+                  -0.2580598294734955,
+                  -0.09717266261577606,
+                  -0.09717266261577606,
+                  -0.36518657207489014,
+                  -0.36518657207489014,
+                  -0.4994812309741974,
+                  -0.3449453115463257,
+                  -0.3449453115463257,
+                  0.4087391583531735
+                ],
+                [
+                  -0.702798068523407,
+                  -0.6989034414291382,
+                  -0.6987624168395996,
+                  -0.698685348033905,
+                  -0.6986087560653687,
+                  -0.8581117987632751,
+                  -0.22302767634391785,
+                  -0.2001883089542389,
+                  -0.17775213718414307,
+                  -0.15679100155830383,
+                  -0.6985859870910645,
+                  -0.3078714907169342,
+                  -0.3078714907169342,
+                  -0.3967062830924988,
+                  -0.24346859753131866,
+                  -0.24346859753131866,
+                  -0.6969543695449829,
+                  -0.1965915858745575,
+                  -0.1965915858745575,
+                  -0.1965915858745575,
+                  6.634662628173828,
+                  -3.6597163677215576,
+                  -3.6597163677215576,
+                  -0.6972169876098633,
+                  -0.6970621347427368,
+                  -0.6967463493347168,
+                  -0.696565568447113,
+                  -0.6963741779327393,
+                  -0.6961717009544373,
+                  -0.4652913212776184,
+                  -0.23268559575080872,
+                  -0.23256629705429077,
+                  6.887448787689209,
+                  0.061153631657361984,
+                  0.061153631657361984,
+                  3.406709671020508,
+                  3.406709671020508,
+                  6.7931294441223145,
+                  6.7931294441223145,
+                  -0.7191737294197083,
+                  -0.4568767547607422,
+                  -0.4568767547607422,
+                  0.6996920052247383
+                ],
+                [
+                  -1.0935384035110474,
+                  -1.0913152694702148,
+                  -1.0899908542633057,
+                  -1.0892791748046875,
+                  -1.0889344215393066,
+                  -0.9649202823638916,
+                  -0.2656184136867523,
+                  -0.24203917384147644,
+                  -0.22468842566013336,
+                  -0.2080005705356598,
+                  -1.0888818502426147,
+                  -0.34197741746902466,
+                  -0.34197741746902466,
+                  -0.49276742339134216,
+                  -0.3304623067378998,
+                  -0.3304623067378998,
+                  -1.0886181592941284,
+                  -0.22781755030155182,
+                  -0.22781755030155182,
+                  -0.22781755030155182,
+                  -0.7215682864189148,
+                  -0.28348854184150696,
+                  -0.28348854184150696,
+                  -1.0887185335159302,
+                  -1.0886439085006714,
+                  -1.088476300239563,
+                  -1.0883606672286987,
+                  -1.0882279872894287,
+                  -1.0880777835845947,
+                  -0.7257717847824097,
+                  -0.3629066050052643,
+                  -0.3628630042076111,
+                  -0.36705920100212097,
+                  -0.13836120069026947,
+                  -0.13836120069026947,
+                  -0.06104884669184685,
+                  -0.06104884669184685,
+                  -0.5443115830421448,
+                  -0.5443115830421448,
+                  13.194853782653809,
+                  6.598461151123047,
+                  6.598461151123047,
+                  1.088766940453422
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "grettings"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good afternoon"
+      ],
+      [
+        "en",
+        "good night"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
+        "goodbye"
+      ],
+      [
+        "en",
+        "goodbye for now"
+      ],
+      [
+        "en",
+        "bye bye take care"
+      ],
+      [
+        "en",
+        "okay see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "sure"
+      ],
+      [
+        "en",
+        "yes"
+      ],
+      [
+        "en",
+        "okay"
+      ],
+      [
+        "en",
+        "maybe"
+      ],
+      [
+        "en",
+        "no"
+      ],
+      [
+        "en",
+        "nah"
+      ],
+      [
+        "en",
+        "nope"
+      ],
+      [
+        "en",
+        "show products"
+      ],
+      [
+        "en",
+        "show product"
+      ],
+      [
+        "en",
+        "I want to buy"
+      ],
+      [
+        "en",
+        "I would like to buy"
+      ],
+      [
+        "en",
+        "I want"
+      ],
+      [
+        "en",
+        "Add the"
+      ],
+      [
+        "en",
+        "checkout"
+      ],
+      [
+        "en",
+        "check out"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner"
+    },
+    "rules": {
+      "en": {
+        "t-shirt": {
+          "name": "t-shirt",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "green",
+              "texts": [
+                "green"
+              ]
+            },
+            {
+              "option": "red",
+              "texts": [
+                "red"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {}
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
