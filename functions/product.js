@@ -1,10 +1,3 @@
-/* eslint-disable import/no-dynamic-require */
-/* eslint-disable no-undef */
-/* eslint-disable no-async-promise-executor */
-/* eslint-disable no-loop-func */
-/* eslint-disable no-await-in-loop */
-/* eslint-disable no-plusplus */
-/* eslint-disable consistent-return */
 const functions = Runtime.getFunctions();
 const dbHelperFunction = functions.dbHelper;
 const {

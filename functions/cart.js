@@ -1,7 +1,3 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable no-await-in-loop */
-/* eslint-disable import/no-dynamic-require */
-/* eslint-disable no-undef */
 const functions = Runtime.getFunctions();
 const userFunction = functions.user;
 const productFunction = functions.product;

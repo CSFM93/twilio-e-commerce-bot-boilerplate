@@ -1,7 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable import/no-dynamic-require */
-/* eslint-disable no-unused-vars */
-
 const functions = Runtime.getFunctions();
 const dbHelperFunction = functions.dbHelper;
 const {

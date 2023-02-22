@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable import/no-dynamic-require */
 const functions = Runtime.getFunctions();
 const dbHelperFunction = functions.dbHelper;
 const { createRecord } = require(dbHelperFunction.path);

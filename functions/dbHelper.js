@@ -1,6 +1,3 @@
-/* eslint-disable arrow-body-style */
-/* eslint-disable no-unused-vars */
-/* eslint-disable consistent-return */
 const Airtable = require('airtable');
 
 const getBase = (context) => {
